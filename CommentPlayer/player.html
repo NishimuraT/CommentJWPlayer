@@ -1,0 +1,52 @@
+<html>
+ <head>
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="nicoscreen.js"></script>
+  <style>
+#nicoscreen {
+ border:none !important;
+}
+  </style>
+ </head>
+ <body style="background-color: transparent;">
+  <div id="nicoscreen">
+  </div>
+  <script type="text/javascript">
+   var screen = document.getElementById("nicoscreen");
+   screen.style.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+   screen.style.height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
+	
+	var obj = {
+		
+		"base":{
+			color:"white",
+			speed:"normal",
+			interval:"normal",
+			font_size:"30px",
+			loop:true
+			
+		},
+		
+		
+		"comments":[
+			
+			"ワロスｗｗｗｗｗ",
+			"ｗｗｗｗｗ",
+			"かわいい",	
+			"(*´д`*)はぁはぁ",
+			"なんだこれｗｗｗ",
+			"ねこかわゆす"
+			
+			
+			
+		]
+		
+	};
+
+	nicoscreen.set(obj);
+	nicoscreen.start();
+
+  </script>
+ </body>
+</html>
